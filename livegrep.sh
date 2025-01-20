@@ -158,7 +158,7 @@ runWebFrontend()
         --publish 8910:8910                             \
         "${baseImg}"                                    \
             /livegrep/bin/livegrep                      \
-                -index-config /data/lg_merged.json      \
+                -index-config /data/livegrep.json      \
                 -docroot /livegrep/web                  \
                 -listen=0.0.0.0:8910                    \
                 --connect livegrep-backend:9999
